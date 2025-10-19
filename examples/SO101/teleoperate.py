@@ -27,11 +27,6 @@ from lerobot_teleoperator_deltas_gamepad import (
     DeltasGamepad as GamepadTeleop,
     DeltasGamepadConfig as GamepadTeleopConfig,
 )
-# from lerobot.teleoperators.gamepad.teleop_gamepad import (
-#     GamepadTeleop,
-#     GamepadTeleopConfig,
-# )
-
 from lerobot.cameras.opencv.configuration_opencv import OpenCVCameraConfig, Cv2Rotation
 from lerobot.model.kinematics import RobotKinematics
 from lerobot.processor import (
