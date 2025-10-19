@@ -72,7 +72,7 @@ Coming soon 🚧
 
 ---
 
-# 🧩 Troubleshooting `/dev/video*` Camera Errors
+## 🧩 Troubleshooting `/dev/video*` Camera Errors
 
 If you encounter an error like this when running `lerobot-find-cameras` or any OpenCV-based script:
 
@@ -84,7 +84,7 @@ It means OpenCV could not access or properly configure your camera device.
 
 ---
 
-## ✅ Step 1. Check Available Camera Devices
+### ✅ Step 1. Check Available Camera Devices
 
 Run this command to see all connected video devices:
 
@@ -102,7 +102,7 @@ USB 2.0 Camera: USB Camera (usb-0000:00:14.0-6):
 
 ---
 
-## ✅ Step 2. Check Supported Formats
+### ✅ Step 2. Check Supported Formats
 
 Once you know the correct device, check its supported formats:
 
@@ -135,7 +135,7 @@ self.videocapture.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'MJPG'))
 
 ---
 
-## ⚙️ Step 3. Fix Common Camera Issues
+### ⚙️ Step 3. Fix Common Camera Issues
 
 | Problem                       | Cause                                   | Solution                                                             |
 | ----------------------------- | --------------------------------------- | -------------------------------------------------------------------- |
@@ -145,7 +145,7 @@ self.videocapture.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'MJPG'))
 
 ---
 
-## 🧪 Step 4. Quick Camera Test (Optional)
+### 🧪 Step 4. Quick Camera Test (Optional)
 
 You can verify camera access with this short Python script:
 
@@ -175,7 +175,7 @@ If not, recheck supported formats with `v4l2-ctl --list-formats-ext`.
 
 ---
 
-## 🧪 Step 5. Override Camera Settings
+### 🧪 Step 5. Override Camera Settings
 
 If your camera is not fully compatible with the default `lerobot` OpenCV camera—e.g., it only supports MJPG—you can override its behavior.
 
@@ -211,7 +211,7 @@ This approach enforces custom camera settings without modifying the original `le
 
 ---
 
-## ⚙️ Step 6. Override Robot Settings
+### ⚙️ Step 6. Override Robot Settings
 
 1. **Create a custom robot file**
 
